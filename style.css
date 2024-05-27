@@ -1,0 +1,15 @@
+.centerDiv {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    text-align: center; 
+    font-family: "Sedan SC", serif;
+    margin: 0;
+}
+.mainImg{
+    border-radius: 20px;
+    margin: 0;
+    padding: 0
+}

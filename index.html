@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
         a {
@@ -68,7 +72,7 @@
                
                 <Nav />
                 <Routes>
-                    <Route path = "/" element={<Main />} />
+                    <Route path = "/" element={<Main text="One of the most beautiful city in the middle of Europe" img="https://i.guim.co.uk/img/media/44907381ba02489d60c01ed449fbbef4f82c9bd4/0_579_8688_5213/master/8688.jpg?width=1200&quality=85&auto=format&fit=max&s=5d57831bfe1d69bb81a6057cbb2ce009"/>} />
                     <Route path = "/info" element={<Info />} />
                     <Route path = "/sight" element={<MainSight />}/>
                     <Route path = "/otherSight" element={<OtherSight />} />

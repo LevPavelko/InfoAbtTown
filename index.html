@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: #483233;
+            margin: 15px;
+            font-size: 28px;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #483233;
+            background-color: #e1d5ca;
+            padding: 15px;
+            margin: 0;
+            border-radius: 5px;
+        }
+
+        .active {
+            color: white;
+            font-weight: bold;
+        }
+      
+     
+
+    </style>
+</head>
+<body style="background-color: #BAA388; padding: 0; margin: 0;">
+    <div id="app" ></div>
+   
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/history@5/umd/history.production.min.js" crossorigin></script>
+   
+    <script src="https://unpkg.com/react-router@6.3.0/umd/react-router.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-router-dom@6.3.0/umd/react-router-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel" src="Main.jsx"></script>
+    <script type="text/babel" src="Info.jsx"></script>
+    <script type="text/babel" src="Nav.jsx"></script>
+    <script type="text/babel" src="MainSight.jsx"></script>
+    <script type="text/babel" src="OtherSight.jsx"></script>
+    <script type="text/babel" src="Images.jsx"></script>
+
+    <script type="text/babel">
+       
+        const Router = ReactRouterDOM.BrowserRouter;
+
+        const Routes = ReactRouterDOM.Routes;
+
+        const Route = ReactRouterDOM.Route;
+
+        const NavLink = ReactRouterDOM.NavLink;
+
+        const Outlet = ReactRouterDOM.Outlet;
+
+        const rootNode = document.getElementById("app");    
+        const root = ReactDOM.createRoot(rootNode);
+
+     root.render(
+        <React.StrictMode>
+            <Router>
+            <div>
+               
+                <Nav />
+                <Routes>
+                    <Route path = "/" element={<Main />} />
+                    <Route path = "/info" element={<Info />} />
+                    <Route path = "/sight" element={<MainSight />}/>
+                    <Route path = "/otherSight" element={<OtherSight />} />
+                    <Route path = "/pictures" element={<Images />} />
+                </Routes>
+            </div>
+            </Router>  
+        </React.StrictMode> 
+        
+        );
+    </script>
+</body> 
+</html>
